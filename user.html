@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker 2025</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Expense Tracker 2025</h1>
+  <div id="calendar"></div>
+
+  <!-- Expense Modal -->
+  <div id="expenseModal" class="expense-modal">
+    <div class="expense-modal-content">
+      <span class="close-btn">&times;</span>
+      <h3>Add Expense</h3>
+      <form id="expenseForm">
+        <label for="expenseDate">Date:</label>
+        <input type="text" id="expenseDate" readonly>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" required>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Savings Table -->
+  <table id="savingsTable">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Amount (₹)</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Popup message -->
+  <div id="popupMessage" class="popup-message">
+    Expense Saved Successfully!
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
